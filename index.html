@@ -6,53 +6,474 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khóa học lập trình</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/img/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="container">
-            <header>
-                <div class="header__logo">
-                    <a href="./index.html" class="header___link"><img src="./styles/img/logo.png" alt="" class="header__img"></a>
-                </div>
-    
+        <!-- header  -->
+        <header>
+            <div class="container">
+                <li class="header__item">
+                    <a href="./index.html" class="header___link"><img src="./styles/img/logo.png" alt=""
+                            class="header__img"></a>
+                </li>
+
                 <li class="header__item"><a href="" class="header___link">Tổng quan</a></li>
                 <li class="header__item"><a href="" class="header___link">Nội dung khóa học</a></li>
-                <li class="header__item"><a href="" class="header___link">Thông số kĩ thuật</a></li>
+                <li class="header__item"><a href="" class="header___link">Câu hỏi thường gặp</a></li>
                 <li class="header__item"><a href="" class="header___link">Liên hệ</a></li>
-    
-                <button style="color: #000000;" class="btn">Học Thử Ngay</button>
-            </header>
+
+                <button class="btn">Học thử miễn phí</button>
+            </div>
+        </header>
+        <!-- banner  -->
+        <div class="banner__wapper">
+            <div class="banner1"></div>
         </div>
 
-        <div class="container">
-            <div class="banner row f-center">
-                <div class="col-6 banner__content">
-                    <p class="banner__text">
-                        Khóa học lập trình & thiết kế website với CodeBoosters
+        <section id="banner">
+            <div class="container">
+                <div class="banner row f-center">
+                    <div class="col l-7 m-6 c-12 banner__content">
+                        <p class="title__text">
+                        <p class="banner__text">Trở thành</p>
+                        <p class="banner__desc">Lập trình viên front end</p>
+                        <span class="banner__desc">Với</span>
+
+                        <span class="banner__text">CodeBoosters</span>
+                        </p>
+
+                        <div class="banner__description">
+                            <p> <i class="fa fa-check" aria-hidden="true"></i>
+                                Bạn muốn học lập trình và thiết kế giao diện website chuyên nghiệp nhưng không biết bắt
+                                đầu từ đâu?
+                            </p>
+
+                            <p>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Bạn muốn học lập trình và thiết kế giao diện website chuyên nghiệp nhưng không biết bắt
+                                đầu từ đâu?
+                            </p>
+                        </div>
+
+                        <div class="btn__group">
+                            <button class="mt-35px text-primary banner__btn btn">Đăng kí khóa học
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                            <button class="btn__play text-primary" type=""><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col l-5 m-6 c-12 banner__img">
+                        <img width="100%" src="./styles/img/banner/banner1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content -->
+        <div class="main">
+            <!-- course  -->
+            <div class="course">
+                <div class="grid wide">
+                    <p class="subtitle mt-50px">
+                        Có gì tại
+                    </p>
+                    <p class="title">
+                        Khóa học lập trình Front End của <br> CodeBoosters?
                     </p>
 
-                    <div class="btn__group mt-35px">
-                        <button class="btn">Học thử miễn phí </button>
-                        <button class="btn background border white-color">Mua khóa học</button>
+
+                    <div style="margin-top: 102px;" class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="course__box">
+                                <div class="course__img">
+                                    <img src="./styles/img/course/htmlcss.png" alt="">
+                                </div>
+
+                                <div class="course__body">
+                                    <h2 class="course__heading">HTML/CSS</h2>
+
+                                    <p class="course__description">
+                                        Bạn sẽ học cách tạo ra các trang web đơn giản với HTML và CSS, từ những kiến
+                                        thức cơ bản nhất cho đến những kỹ thuật nâng cao hơn.
+                                    </p>
+
+                                    <a href="#" class="course__link text-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="course__box">
+                                <div class="course__img">
+                                    <img src="./styles/img/course/js.png" alt="">
+                                </div>
+
+                                <div class="course__body">
+                                    <h2 class="course__heading">JavaScript</h2>
+
+                                    <p class="course__description">
+                                        Bạn sẽ học cách sử dụng JavaScript để tạo ra các tính năng động cho trang web,
+                                        tạo ra các hiệu ứng và tương tác người dùng.
+                                    </p>
+
+                                    <a href="#" class="course__link text-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="course__box">
+                                <div class="course__img">
+                                    <img src="./styles/img/course/reactjs.png" alt="">
+                                </div>
+
+                                <div class="course__body">
+                                    <h2 class="course__heading">React JS</h2>
+
+                                    <p class="course__description">
+                                        Bạn sẽ học cách sử dụng ReactJS để xây dựng các ứng dụng web động với tính năng
+                                        cao.
+                                    </p>
+
+                                    <a href="#" class="course__link text-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- info  -->
+            <section style="margin-top: 164px;" class="infomation grid wide">
+                <p class="subtitle">
+                    Tại sao
+                </p>
+                <p class="title">
+                    Bạn nên mua khóa học lập trình Front End tại CodeBoosters?
+                </p>
+
+                <div style="margin-top: 114px;" class="row f-center">
+                    <div class="col l-6 m-6 c-12">
+                        <p class="text-primary section-heading text-primary">
+                            Thực hành nhiều dự án khác nhau từ cơ bản đến nâng cao
+                        </p>
+
+                        <p class="section-description">
+                            Trong quá trình học, bạn sẽ được hướng dẫn và thực hành nhiều dự án trên <span
+                                style="color: #34c7ff;">Figma.</span>
+                        </p>
+
+                        <p class="section-description">
+                            Giúp bạn xây dựng được một portfolio ấn tượng để có thể ứng tuyển vào các công ty lập trình
+                            front-end.
+                        </p>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <img class="border-raidus" src="./styles/img/content/content1.png" width="100%" alt="">
                     </div>
                 </div>
 
-                <div class="col-6 banner__img">
-                    <img src="./styles/img/banner/banner1.png" alt="">
+                <div style="margin-top: 150px;" class="row f-center">
+                    <div class="col l-5">
+                        <img class="border-raidus" src="./styles/img/content/content1.png" width="100%" alt="">
+                    </div>
+
+                    <div class="col l-7">
+                        <p class="text-primary section-heading text-primary">
+                            Lộ trình học bài bản, chuyên sâu
+                        </p>
+
+                        <p class="section-description">
+                            Lộ trình học được thiết kế bài bản, từ cơ bản đến chuyên sâu, giúp bạn có được một kiến thức
+                            toàn diện về lập trình front-end.
+                        </p>
+
+                        <p class="section-description">
+                            Chương trình học được thiết kế đặc biệt để đáp ứng nhu cầu của cả những người mới bắt đầu và
+                            những người có kinh nghiệm.
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+
+
+            <!-- feedback  -->
+            <section class="feedback">
+                <div class="grid wide">
+                    <p class="title">
+                        Phản hồi từ học viên
+                    </p>
+
+                    <div style="margin-top: 8px;" class="row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="feedback__box">
+                                <div class="feedback__client">
+                                    <div class="feedback__img">
+                                        <img src="./styles/img/client/client1.png" alt="">
+                                    </div>
+
+                                    <div class="feedback__body">
+                                        <p class="feedback__name">
+                                            Nguyễn Van A
+                                        </p>
+
+                                        <p class="feedback__pupil">
+                                            Học viên CodeBoosters
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <p class="feedback__description">
+                                    Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi lúc các bạn cũng sẽ tự
+                                    lướt qua mà không muốn xem ấy :v). Các features đi kèm cực kỳ xịn sò mà các
+                                    trang như Udemy, Udacity không có
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="feedback__box">
+                                <div class="feedback__client">
+                                    <div class="feedback__img">
+                                        <img src="./styles/img/client/client1.png" alt="">
+                                    </div>
+
+                                    <div class="feedback__body">
+                                        <p class="feedback__name">
+                                            Nguyễn Van A
+                                        </p>
+
+                                        <p class="feedback__pupil">
+                                            Học viên CodeBoosters
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <p class="feedback__description">
+                                    Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi lúc các bạn cũng sẽ tự
+                                    lướt qua mà không muốn xem ấy :v). Các features đi kèm cực kỳ xịn sò mà các
+                                    trang như Udemy, Udacity không có
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="feedback__box">
+                                <div class="feedback__client">
+                                    <div class="feedback__img">
+                                        <img src="./styles/img/client/client1.png" alt="">
+                                    </div>
+
+                                    <div class="feedback__body">
+                                        <p class="feedback__name">
+                                            Nguyễn Van A
+                                        </p>
+
+                                        <p class="feedback__pupil">
+                                            Học viên CodeBoosters
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <p class="feedback__description">
+                                    Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi lúc các bạn cũng sẽ tự
+                                    lướt qua mà không muốn xem ấy :v). Các features đi kèm cực kỳ xịn sò mà các
+                                    trang như Udemy, Udacity không có
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="feedback__box">
+                                <div class="feedback__client">
+                                    <div class="feedback__img">
+                                        <img src="./styles/img/client/client1.png" alt="">
+                                    </div>
+
+                                    <div class="feedback__body">
+                                        <p class="feedback__name">
+                                            Nguyễn Van A
+                                        </p>
+
+                                        <p class="feedback__pupil">
+                                            Học viên CodeBoosters
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <p class="feedback__description">
+                                    Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi lúc các bạn cũng sẽ tự
+                                    lướt qua mà không muốn xem ấy :v). Các features đi kèm cực kỳ xịn sò mà các
+                                    trang như Udemy, Udacity không có
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- question  -->
+            <section class="question">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-6 c-12">
+                            <div class="title">
+                                Câu hỏi thường gặp?
+                            </div>
+
+                            <ul class="question__list">
+                                <li class="question__item">
+                                    <h2 class="question__name">Front end là gì? <span> <i
+                                                class="fa-solid fa-chevron-down"></i> </span></h2>
+                                    <p class="question__desc">Front-end là phần giao diện người dùng của một trang web,
+                                        bao gồm các thành phần như HTML, CSS và JavaScript.</p>
+                                </li>
+
+                                <li class="question__item">
+                                    <h2 class="question__name">Front end là gì? <span> <i
+                                                class="fa-solid fa-chevron-down"></i> </span></h2>
+                                </li>
+
+                                <li class="question__item">
+                                    <h2 class="question__name">Front end là gì? <span> <i
+                                                class="fa-solid fa-chevron-down"></i> </span></h2>
+                                </li>
+
+                                <li class="question__item">
+                                    <h2 class="question__name">Front end là gì? <span> <i
+                                                class="fa-solid fa-chevron-down"></i> </span></h2>
+                                </li>
+
+                                <li class="question__item">
+                                    <h2 class="question__name">Front end là gì? <span> <i
+                                                class="fa-solid fa-chevron-down"></i> </span></h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- subrice  -->
+            <section class="theend">
+                <div class="grid wide">
+                    <div class="row f-center">
+                        <div class="col l-6">
+                            <p class="title">
+                                Bắt đầu trở thành lập trình viên Front-End
+                                chuyên nghiệp?
+                            </p>
+
+                            <button class="btn">
+                                Đăng kí ngay giảm 70%
+                                <i class="fa-solid fa-rocket"></i>
+                            </button>
+                        </div>
+                        <div class="col l-6">
+                            <img width="100%" src="./styles/img/content/theend.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="grid wide">
+            <footer>
+                <div class="row">
+                    <ul class="footer__list col l-3 m-6 c-12">
+                        <h2 class="footer__heading">Logo</h2>
+                        <li class="footer__item">
+                            Học lập trình từ cơ bản đến nâng cao với CodeBoosters
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <i class="fa-brands fa-facebook"></i>
+                                CodeBoosters.VN
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <i class="fa-solid fa-link"></i>
+                                codeboosters.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <i class="fa-solid fa-at"></i>
+                                codeboosters@gmail.com
+                            </a>
+                        </li>
+                    </ul>
 
-        <footer>
+                    <ul class="footer__list col l-3 m-6 c-12">
+                        <h2 class="footer__heading">Về chúng tôi</h2>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cơ hội việc làm</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Đối tác</a>
+                        </li>
+                    </ul>
 
-        </footer>
+                    <ul class="footer__list col l-3 m-6 c-12">
+                        <h2 class="footer__heading">Các khóa học</h2>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Lập trình Front End</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Lập trình Back End</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Backend NodeJS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Lập trình PHP</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list col l-3 m-6 c-12">
+                        <h2 class="footer__heading">Liên kết khác</h2>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Câu hỏi thường gặp</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Tài liệu học lập trình</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="footer__license">
+                    <p class="footer__license-item">© 2023 CodeBoosters</p>
+                    <p class="footer__license-item">Điều khoản | Bảo mật</p>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 
